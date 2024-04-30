@@ -1,0 +1,60 @@
+<!-- templates/blog/read_more.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5; /* Warna latar belakang */
+            color: #333; /* Warna teks */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff; /* Warna latar belakang konten */
+            border-radius: 5px; /* Sudut bulat konten */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #c2185b; /* Warna judul */
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #c2185b; /* Warna tombol */
+            color: #fff; /* Warna teks tombol */
+            padding: 10px 20px;
+            border-radius: 5px; /* Sudut bulat tombol */
+            text-decoration: none;
+            transition: background-color 0.3s; /* Efek animasi saat hover */
+        }
+
+        .button:hover {
+            background-color: #ab1456; /* Warna tombol saat dihover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.content }}</p>
+        <a href="#" class="button">Back to Blog</a>
+    </div>
+</body>
+</html>

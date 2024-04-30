@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5; /* Warna latar belakang */
+            color: #333; /* Warna teks */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #c2185b; /* Warna judul */
+        }
+
+        p {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff; /* Warna latar belakang konten */
+            border-radius: 5px; /* Sudut bulat konten */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.content }}</p>
+</body>
+</html>

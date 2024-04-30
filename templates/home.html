@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #c2185b; /* Warna background navbar */
+            color: #fff; /* Warna teks navbar */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #f48fb1; /* Warna teks saat hover */
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-item {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Beauty Blog</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="http://127.0.0.1:8000/about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="http://127.0.0.1:8000/Blog" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="http://127.0.0.1:8000/Contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome. It's Me Amel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3e5f5; /* Latar belakang pink */
+            color: #333; /* Warna teks */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto; /* Menambahkan margin atas dan bawah */
+            padding: 20px;
+            background-color: #fff; /* Latar belakang kontainer putih */
+            border-radius: 10px; /* Sudut bulat kontainer */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #c2185b; /* Warna judul */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature-box {
+            background-color: #f48fb1; /* Warna latar belakang box */
+            border-radius: 10px; /* Sudut bulat box */
+            padding: 20px;
+            margin-bottom: 30px; /* Margin bawah untuk box */
+            transition: transform 0.3s; /* Efek animasi saat hover */
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px); /* Menggeser box ke atas saat hover */
+        }
+
+        .feature-box h2 {
+            font-size: 28px;
+            color: #c2185b; /* Warna judul */
+            margin-bottom: 20px; /* Margin bawah untuk judul */
+        }
+
+        .feature-box p {
+            line-height: 1.6;
+            margin-bottom: 20px; /* Margin bawah untuk teks */
+        }
+
+        .feature-box img {
+            max-width: 40%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px; /* Margin atas, bawah, dan tengah */
+            border-radius: 10px; /* Sudut bulat gambar */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            transition: transform 0.3s; /* Efek animasi saat hover */
+        }
+
+        .feature-box img:hover {
+            transform: scale(1.1); /* Memperbesar gambar saat hover */
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #c2185b; /* Warna tombol */
+            color: #fff; /* Warna teks tombol */
+            padding: 10px 20px;
+            border-radius: 5px; /* Sudut bulat tombol */
+            text-decoration: none;
+            transition: background-color 0.3s; /* Efek animasi saat hover */
+        }
+
+        .button:hover {
+            background-color: #c2185b; /* Warna tombol saat dihover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome. Hi! It's Me Amel</h1>
+
+        <div class="feature-box">
+            <h2>Latest Blog Posts</h2>
+            <p>Discover the latest beauty trends and tips from our experts.</p>
+            <!-- Ganti URL gambar di bawah ini dengan URL gambar yang Anda unggah -->
+            <img src="media/page_images/beauty.jpg" alt="Latest Posts">
+            <a href="http://127.0.0.1:8000/Blog" class="button">Read More</a>
+        </div>
+
+        <div class="feature-box">
+            <h2>Beauty Tips</h2>
+            <p>Get insider tips on makeup, skincare, and haircare.</p>
+            <img src="media/page_images/beauty2.jpg" alt="Beauty Tips">
+            <a href="#" class="button">Explore Tips</a>
+        </div>
+
+        <div class="feature-box">
+            <h2>Product Reviews</h2>
+            <p>Find out which beauty products are worth the hype.</p>
+            <img src="media/page_images/beauty3.jpg" alt="Product Reviews">
+            <a href="#" class="button">See Reviews</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<footer style="background-color: #c2185b; color: #fff; padding: 20px;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h3 style="margin-bottom: 10px;">Contact Us</h3>
+        <p style="margin-bottom: 10px;">Email: amaliaputryy22@gmail.com</p>
+        <p>Phone: +62 812 1650 9705</p>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Home</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">About Us</a>
+        <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Blog</a>
+        <a href="#" style="color: #fff; text-decoration: none;">Contact</a>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        &copy; 2024 Beauty Blog. All Rights Reserved.
+    </div>
+</footer>
+
